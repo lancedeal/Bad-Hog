@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Hog Land Clearing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#testimonials">Testimonials</a>
+        </nav>
+        <div class="header-logo">
+            <img src="./images/BHLogo.png">
+        </div>
+    </header>
+    <div class="outer-border">
+        <div class="container container-one">
+            <div class="container-top-half">
+                <div class="container-item container-about">
+                    <h2 id="about">About</h2>
+                    <div class="container-content about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+            <!--
+                <hr class="hr-divider">
+            -->
+            <div class="container-bottom-half">
+                <div class="container-item container-services">
+                    <h2 id="services">Services</h2>
+                    <div class="container-content services-content">
+                        <div class="service-item">LOT CLEARING</div>
+                        <div class="service-item">FENCE LINE CLEARING</div>
+                        <div class="service-item">TREE TRIMMING</div>
+                        <div class="service-item">TREE REMOVAL</div>
+                    </div>
+                    <div class="service-information">
+                        <div class="service-estimator">
+                            <h2 class="margin-top-light">Cost Estimator</h2>
+                            <form>
+                                <div class="estimator-section estimator-clearing">
+                                    <div class="estimator-selector">
+                                        <label>Clearing</label>
+                                        <select id="clearing-select" class="estimator-option-select">
+                                            <option selected disabled>--Options--</option>
+                                            <option value="heavy">Heavily Forested</option>
+                                            <option value="light-moderate">Lightly & Moderately Forested</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Acres</label>
+                                        <input id="clearing-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="clearing-button">Add to Total</button>
+                                </div>
+                                <div class="estimator-section estimator-disposal">
+                                    <div class="estimator-selector">
+                                        <label>Disposal</label>
+                                        <select id="disposal-select" class="estimator-option-select">
+                                            <option value="" selected disabled>--Options--</option>
+                                            <option value="burning">Burning</option>
+                                            <option value="mulching">Mulching</option>
+                                            <option value="haul-off">Haul Off</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Acres</label>
+                                        <input id="disposal-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="disposal-button">Add to Total</button>
+                                </div>
+                                <div class="estimator-section estimator-equipment">
+                                    <div class="estimator-selector">
+                                        <label>Equipment Deposit</label>
+                                        <select id="equipment-select" class="estimator-option-select">
+                                            <option value="" selected disabled>--Options--</option>
+                                            <option value="skidsteer">Skidsteer</option>
+                                            <option value="chip-shredder">Chip Shredder</option>
+                                            <option value="dump-trailer">Dump Trailer</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Units</label>
+                                        <input id="equipment-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="equipment-button">Add to Total</button>
+                                </div>
+                            </form>
+                            <!--
+                                Experimental Estimator Service Display
+                            -->
+                            <div class="estimator-selected-services">
+                                <div class="estimator-selected-service">
+                                    <span>Haul-Off</span>
+                                    <span>Acres:<span class="estimator-selected-service-unit">2</span></span>
+                                    <span>$<span class="estimator-selected-service-cost">200</span></span>
+                                    <button>Remove</button>
+                                </div>
+                            </div>
+                            <div class="estimator-total">
+                                Total: $<span class="estimator-total-calculation">0</span>
+                                <button id="clear-total-button">Clear</button>
+                            </div>
+                        </div>
+                        <div class="service-price-guide">
+                            <h2 class="margin-top-light">Price Guide</h2>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description-title">Description</span>
+                                <span class="price-guide-rate-title">Rate</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Skidsteer</span>
+                                <span class="price-guide-rate">$500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Chip Shredder</span>
+                                <span class="price-guide-rate">$500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Dump Hauler</span>
+                                <span class="price-guide-rate">$300</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Clearing - Heavily Forested</span>
+                                <span class="price-guide-rate">$2000</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Clearing - Light/Moderately Forested</span>
+                                <span class="price-guide-rate">$1500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Disposal - Burning</span>
+                                <span class="price-guide-rate">$150</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Disposal - Mulching</span>
+                                <span class="price-guide-rate">$250</span>
+                            </div>
+                            <div class="price-guide-row border-bottom">
+                                <span class="price-guide-description">Disposal - Haul-Off</span>
+                                <span class="price-guide-rate">$100</span>
+                            </div>
+                            <div class="price-guide-comments">
+                                <div class="border-bottom">Comments</div>
+                                <div>Equipment Deposit Per Unit</div>
+                                <div>Clearing/Disposal Per Acre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-two">
+            <div class="container-item container-contact">
+                <h2 id="contact">Contact Us</h2>
+                <div>
+                    Email
+                    <div class="contact-information">
+                        badhoglandclearing@gmail.com
+                    </div>
+                </div>
+                <div>
+                    Call
+                    <div class="contact-information">
+                        (512) 299 - 5415 | (512) 423 - 2963
+                    </div>
+                </div>
+            </div>
+            <div class="container-item container-testimonials">
+                <h2 id="testimonials">Testimonials</h2>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        My yard has never looked better!
+                    </div>
+                    <div class="testimonial-source">
+                        - Bobby Wheeler
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        I will definitely be recommending them to my family and friends.
+                    </div>
+                    <div class="testimonial-source">
+                        - Nick Rogers
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        Their service is great!
+                    </div>
+                    <div class="testimonial-source">
+                        - Sammy West
+                    </div>
+                </div>
+                <div class="testimonial-before">
+                    <h3>Before</h3>
+                    <img src="./images/before1.jpg">
+                </div>
+                <div class="testimonial-after">
+                    <h3>After</h3>
+                    <img src="./images/after1.jpg">
+                </div>
+                <div class="testimonial-before">
+                    <h3>Before</h3>
+                    <img src="./images/before2.jpg">
+                </div>
+                <div class="testimonial-after">
+                    <h3>After</h3>
+                    <img src="./images/after2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

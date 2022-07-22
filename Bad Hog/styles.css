@@ -1,0 +1,332 @@
+
+@font-face {
+    font-family: "Bahnschrift";
+    src: url(./Fonts/Bahnschrift/bahnschrift.ttf);
+}
+
+@font-face {
+    font-family: 'Gauge - Regular';
+    src: url(./Fonts/Gauge/Gauge-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Gauge - Heavy';
+    src: url(./Fonts/Gauge/Gauge-Heavy.otf);
+}
+
+@font-face {
+    font-family: 'Gauge - Oblique';
+    src: url(./Fonts/Gauge/Gauge-Oblique.otf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono - Regular';
+    src: url(./Fonts/Roboto\ Mono/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono - Medium';
+    src: url(./Fonts/Roboto\ Mono/RobotoMono-Medium.ttf);
+}
+
+*{
+    --primary:#AF936E;
+    --secondary:#C6B08E;
+    --black:#010101;
+    --white:#f3f3f3;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    background-color: var(--secondary);
+}
+
+header{
+    background-color: var(--black);
+    height:30em;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.margin-top-light{
+    margin-top: 2em;
+}
+
+.main-nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:40%;
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: var(--white) solid 2px;
+    position:sticky;
+    top:0;
+}
+
+.main-nav a{
+    color:var(--white);
+    text-decoration: none;
+    padding-left: .3em;
+    padding-right: .3em;
+    font-family: 'Gauge - Heavy';
+    font-size:1.5em;
+    border:var(--black) solid 2px;
+}
+
+.main-nav a:hover{
+    /*background-color: #505050;*/
+    border:white solid 2px;
+    border-top-left-radius: .8em;
+    border-bottom-right-radius: .8em;
+}
+
+.header-logo{
+    width:95%;
+    height:70%;
+    background-color: var(--primary);
+    margin-top: 2em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+
+.header-logo img{
+    width:60%;
+    border-left: var(--black) solid 5px;
+    border-right: var(--black) solid 5px;
+    padding-left: 13em;
+    padding-right: 13em;
+}
+
+.outer-border{
+    background-color: var(--black);
+    width:100%;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-divider{
+    width: 100%;
+    position:relative;
+    bottom:.5em;
+}
+
+.container{
+    font-family: 'Gauge - Heavy';
+    font-size: 1.5em;
+    background-color: var(--secondary);
+    width:95%;
+    box-sizing: border-box;
+    border-radius: 2em;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container-top-half{
+    display:flex;
+    justify-content: center;
+    background-color: var(--primary);
+    height:50%;
+    width:100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    flex-grow: 1;
+}
+
+.container-bottom-half{
+    background-color: var(--secondary);
+    height: 50%;
+    width:100%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    flex-grow: 1;
+}
+
+.container-one{
+    margin-bottom: 2em;
+}
+
+.container-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    margin-bottom: 2em;
+    position:relative;
+}
+
+.container-item:last-child{
+    margin-bottom: 0;
+}
+
+
+.container-about{
+    width:50%;
+}
+
+.container-services{
+    background-color: var(--secondary);
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item{
+    padding:.2em;
+}
+
+.service-item:last-child{
+    padding-bottom: 1em;
+}
+
+.service-information{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-estimator form{
+    display:flex;
+    flex-direction: column;
+    width:35vw;
+}
+
+.estimator-section{
+    display:flex;
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+.estimator-selector{
+    width:55%;
+}
+
+.estimator-unit{
+    width:25%;
+}
+
+.estimator-option-select{
+    text-align: center;
+}
+
+.estimator-total{
+    border-top: var(--black) solid 2px;
+    padding-top: .5em;
+    padding-right: 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.estimator-total-calculation{
+    padding-right: 1em;
+}
+
+.estimator-selected-services{
+    border-top: var(--black) solid 2px;
+    padding:1em 0;
+}
+
+.estimator-selected-service{
+    display:flex;
+    justify-content: space-around;
+}
+
+.estimator-selected-service-unit{
+    padding-left: .5em;
+}
+
+.unit-input{
+    text-align: center;
+    width:3em;
+    border:var(--black) solid 2px;
+    border-radius: .2em;
+    background-color: var(--white);
+}
+
+.service-price-guide{
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    margin-top: 1em;
+}
+
+.price-guide-row{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    padding-bottom: .4em;
+}
+
+.price-guide-description-title{
+    width:80%;
+    padding-bottom: .1em;
+    border-bottom: var(--black) solid 2px;
+}
+
+.price-guide-rate-title{
+    width:20%;
+    padding-bottom: .1em;
+    border-bottom: var(--black) solid 2px;
+}
+
+.price-guide-description{
+    width:80%;
+}
+
+.price-guide-rate{
+    width:20%;
+}
+
+.price-guide-comments{
+    width:50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.border-bottom{
+    border-bottom: var(--black) solid 2px;
+}
+
+.container-contact{
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.container-contact div:last-child{
+    padding-bottom: 1em;
+}
+
+.contact-information{
+    padding:1em 0;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--black);
+    height:8em;
+}
+
