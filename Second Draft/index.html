@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Hog Land Clearing</title>
+    <link rel="stylesheet" href="stylesGallery.css">
+    <link rel="stylesheet" href="stylesOriginal.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+        <div class="header-logo">
+            <img src="./images/BHLogo.png">
+        </div>
+    </header>
+    <div class="outer-border">
+    <main>
+        <section class="margin-top-light about">
+            <div class="about-container margin-top-light">
+                <div class="about-content">
+                    <h2 class="about-header">About</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div>
+                    <img src="./images/about1.jpg">
+                </div>
+            </div>
+        </section><div class="services-banner">
+            <h2>Services</h2>
+            <div>
+                <span>LOT CLEARING</span>
+                <span>FENCE LINE CLEARING</span>
+                <span>TREE TRIMMING</span>
+                <span>TREE REMOVAL</span>
+            </div>
+        </div>
+        <section>
+            
+            <div class="estimator">
+                <div class="estimator-clearing estimator-item">
+                    <p>What is the forest density?</p>
+                    <div class="margin-bottom-very-light">
+                        <button id="lightC" class="estimator-choice">Light</button>
+                        <button id="moderateC" class="estimator-choice">Moderate</button>
+                        <button id="heavyC" class="estimator-choice">Heavy</button>
+                    </div>
+                    <button id="clear-btn-next" class="btn-hover margin-bottom-very-light">Next</button>
+                </div>
+                <div class="estimator-acres-boolean estimator-item">
+                    <p>Is your property at least an acre or more?</p>
+                    <div class="margin-bottom-very-light">
+                        <button id="acre-sub-false" class="estimator-choice">Yes</button>
+                        <button id="acre-sub-true" class="estimator-choice">No</button>
+                    </div>
+                    <div class="margin-bottom-very-light">
+                        <button id="acre-bool-btn-back" class="btn-hover">Back</button>
+                        <button id="acre-bool-btn-next" class="btn-hover">Next</button>
+                    </div>
+                </div>
+                <div class="estimator-acres estimator-item">
+                    <p>How many acres would you like to clear?</p>
+                    <input id="acre-input" class="unit-input" type="number" value="1" required>
+                    <div class="margin-bottom-very-light margin-top-very-light">
+                        <button id="acre-btn-back" class="btn-hover">Back</button>
+                        <button id="acre-btn-next" class="btn-hover">Next</button>
+                    </div>
+                </div>
+                <div class="estimator-disposal estimator-item">
+                    <p>How would you like it disposed?</p>
+                    <div>
+                        <button id="burnD" class="estimator-choice">Burning</button>
+                        <button id="mulchD" class="estimator-choice">Mulch</button>
+                        <button id="haulD" class="estimator-choice estimator-choice-disabled">Haul-Off</button>
+                    </div>
+                    <div class="description-text">*Haul-Off only available for 1 acre or less</div>
+                    <div>
+                        <button id="dispo-btn-back" class="btn-hover margin-bottom-very-light">Back</button>
+                        <button id="dispo-btn-done" class="btn-hover margin-bottom-very-light">Done</button>
+                    </div>
+                </div>
+                <div class="estimator-finished estimator-item">
+                    <div>
+                        Thank you for using our estimator! Reset to use it again.
+                    </div>
+                    <button class="btn-hover margin-bottom-very-light">Reset</button>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+                <div>
+                    <div class="sub-header">Email</div>
+                    <div class="contact-information">
+                        badhoglandclearing@gmail.com
+                    </div>
+                </div>
+                <div>
+                    <div class="sub-header">Call</div>
+                    <div class="contact-information">
+                        (512) 299 - 5415 | (512) 423 - 2963
+                    </div>
+                </div>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <div class="gallery-container">
+                <div id="set-1" class="gallery-item">
+                    <div class="gallery-item-imgs">
+                        <button id="back-set-1">Back</button>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">Before</h2>
+                            <img class="gallery-img" src="images/before1.jpg">
+                        </span>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">After</h2>
+                            <img class="gallery-img" src="images/after1.jpg">
+                        </span>
+                        <button id="next-set-1">Next</button>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">My yard has never looked better!</div>
+                        <div class="testimonial-source">- Bobby Wheeler</div>
+                    </div>
+                </div>
+                <div id="set-2" class="gallery-item hidden">
+                    <div class="gallery-item-imgs">
+                        <button id="back-set-2">Back</button>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">Before</h2>
+                            <img class="gallery-img" src="images/before2.jpg">
+                        </span>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">After</h2>
+                            <img class="gallery-img" src="images/after2.jpg">
+                        </span>
+                        <button id="next-set-2">Next</button>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">I will definitely be recommending Bad Hog Land Clearing to my family.</div>
+                        <div class="testimonial-source">- Jamison Sheffield</div>
+                    </div>
+                </div>
+                <div id="set-3" class="gallery-item hidden">
+                    <div class="gallery-item-imgs">
+                        <button id="back-set-3">Back</button>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">Before</h2>
+                            <img class="gallery-img" src="images/before3.jpg">
+                        </span>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">After</h2>
+                            <img class="gallery-img" src="images/after3.jpg">
+                        </span>
+                        <button id="next-set-3">Next</button>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div class="testimonial-source">- Michelle  Robertson</div>
+                    </div>
+                </div>
+                <div id="set-4" class="gallery-item hidden">
+                    <div class="gallery-item-imgs">
+                        <button id="back-set-4">Back</button>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">Before</h2>
+                            <img class="gallery-img" src="images/before4.jpg">
+                        </span>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">After</h2>
+                            <img class="gallery-img" src="images/after4.jpg">
+                        </span>
+                        <button id="next-set-4">Next</button>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div class="testimonial-source">- Kane Miles</div>
+                    </div>
+                </div>
+                <div id="set-5" class="gallery-item hidden">
+                    <div class="gallery-item-imgs">
+                        <button id="back-set-5">Back</button>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">Before</h2>
+                            <img class="gallery-img" src="images/before5.jpg">
+                        </span>
+                        <span class="gallery-item-img">
+                            <h2 class="gallery-header">After</h2>
+                            <img class="gallery-img" src="images/after5.jpg">
+                        </span>
+                        <button id="next-set-5">Next</button>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="testimonial-source">- Rebecca  Carey</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <!--
+    <div class="outer-border">
+        <div class="container container-one">
+            <div class="container-top-half">
+                <div class="container-item container-about">
+                    <h2 id="about">About</h2>
+                    <div class="container-content about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+            <div class="container-bottom-half">
+                <div class="container-item container-services">
+                    <h2 id="services">Services</h2>
+                    <div class="container-content services-content">
+                        <div class="service-item">LOT CLEARING</div>
+                        <div class="service-item">FENCE LINE CLEARING</div>
+                        <div class="service-item">TREE TRIMMING</div>
+                        <div class="service-item">TREE REMOVAL</div>
+                    </div>
+                    <div class="service-information">
+                        <div class="service-estimator">
+                            <h2 class="margin-top-light">Cost Estimator</h2>
+                            <form>
+                                <div class="estimator-section estimator-clearing">
+                                    <div class="estimator-selector">
+                                        <label>Clearing</label>
+                                        <select id="clearing-select" class="estimator-option-select">
+                                            <option selected disabled>--Options--</option>
+                                            <option value="heavy">Heavily Forested</option>
+                                            <option value="light-moderate">Lightly & Moderately Forested</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Acres</label>
+                                        <input id="clearing-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="clearing-button">Add to Total</button>
+                                </div>
+                                <div class="estimator-section estimator-disposal">
+                                    <div class="estimator-selector">
+                                        <label>Disposal</label>
+                                        <select id="disposal-select" class="estimator-option-select">
+                                            <option value="" selected disabled>--Options--</option>
+                                            <option value="burning">Burning</option>
+                                            <option value="mulching">Mulching</option>
+                                            <option value="haul-off">Haul Off</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Acres</label>
+                                        <input id="disposal-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="disposal-button">Add to Total</button>
+                                </div>
+                                <div class="estimator-section estimator-equipment">
+                                    <div class="estimator-selector">
+                                        <label>Equipment Deposit</label>
+                                        <select id="equipment-select" class="estimator-option-select">
+                                            <option value="" selected disabled>--Options--</option>
+                                            <option value="skidsteer">Skidsteer</option>
+                                            <option value="chip-shredder">Chip Shredder</option>
+                                            <option value="dump-trailer">Dump Trailer</option>
+                                        </select>
+                                    </div>
+                                    <div class="estimator-unit">
+                                        <label>Units</label>
+                                        <input id="equipment-unit" class="unit-input" type="number" value="1" required>
+                                    </div>
+                                    <button type='button' id="equipment-button">Add to Total</button>
+                                </div>
+                            </form>
+                            
+                            <div class="estimator-selected-services">
+                                <div class="estimator-selected-service">
+                                    <span>Haul-Off</span>
+                                    <span>Acres:<span class="estimator-selected-service-unit">2</span></span>
+                                    <span>$<span class="estimator-selected-service-cost">200</span></span>
+                                    <button>Remove</button>
+                                </div>
+                            </div>
+                            <div class="estimator-total">
+                                Total: $<span class="estimator-total-calculation">0</span>
+                                <button id="clear-total-button">Clear</button>
+                            </div>
+                        </div>
+                        <div class="service-price-guide">
+                            <h2 class="margin-top-light">Price Guide</h2>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description-title">Description</span>
+                                <span class="price-guide-rate-title">Rate</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Skidsteer</span>
+                                <span class="price-guide-rate">$500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Chip Shredder</span>
+                                <span class="price-guide-rate">$500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Equipment Deposit - Dump Hauler</span>
+                                <span class="price-guide-rate">$300</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Clearing - Heavily Forested</span>
+                                <span class="price-guide-rate">$2000</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Clearing - Light/Moderately Forested</span>
+                                <span class="price-guide-rate">$1500</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Disposal - Burning</span>
+                                <span class="price-guide-rate">$150</span>
+                            </div>
+                            <div class="price-guide-row">
+                                <span class="price-guide-description">Disposal - Mulching</span>
+                                <span class="price-guide-rate">$250</span>
+                            </div>
+                            <div class="price-guide-row border-bottom">
+                                <span class="price-guide-description">Disposal - Haul-Off</span>
+                                <span class="price-guide-rate">$100</span>
+                            </div>
+                            <div class="price-guide-comments">
+                                <div class="border-bottom">Comments</div>
+                                <div>Equipment Deposit Per Unit</div>
+                                <div>Clearing/Disposal Per Acre</div>
+                            </div>
+                        </div>
+                        <div class="estimator-questionaire">
+                            <div class="questionaire-item questionaire-clearing">
+                                <p>What is the forest density?</p>
+                                <div class="questionaire-choices">
+                                    <span class="questionaire-choice-unselected">Light</span>
+                                    <span class="questionaire-choice-unselected">Moderate</span>
+                                    <span class="questionaire-choice-selected">Heavy</span>
+                                </div>
+                                <div class="questionaire-btns">
+                                    <button>Next</button>
+                                </div>
+                            </div>
+                            <div class="questionaire-item questionaire-acres">
+                                <p>How many acres?</p>
+                                <input class="unit-input" type="number" value="1" required>
+                                <div class="margin-bottom-very-light description-text">*More than 1 Acres will require a skid steer</div>
+                                <div class="questionaire-btns">
+                                    <button>Back</button>
+                                    <button>Next</button>
+                                </div>
+                            </div>
+                            <div class="questionaire-item questionaire-disposal">
+                                <p>What is the preferred disposal method?</p>
+                                <div class="questionaire-choices">
+                                    <span class="questionaire-choice-unselected">Burning</span>
+                                    <span class="questionaire-choice-selected">Mulching</span>
+                                    <span class="questionaire-choice-unselected">Haul-Off</span>
+                                </div>
+                                <div class="margin-bottom-very-light description-text">*Haul-Off is only available for 1 Acre or Less</div>
+                                <div class="questionaire-btns">
+                                    <button>Back</button>
+                                    <button>Done</button>
+                                </div>
+                            </div>
+                            <div class="questionaire-total">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-two">
+            <div class="container-item container-contact">
+                <h2 id="contact">Contact Us</h2>
+                <div>
+                    Email
+                    <div class="contact-information">
+                        badhoglandclearing@gmail.com
+                    </div>
+                </div>
+                <div>
+                    Call
+                    <div class="contact-information">
+                        (512) 299 - 5415 | (512) 423 - 2963
+                    </div>
+                </div>
+            </div>
+            <div class="container-item container-testimonials">
+                <h2 id="testimonials">Testimonials</h2>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        My yard has never looked better!
+                    </div>
+                    <div class="testimonial-source">
+                        - Bobby Wheeler
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        I will definitely be recommending them to my family and friends.
+                    </div>
+                    <div class="testimonial-source">
+                        - Nick Rogers
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        Their service is great!
+                    </div>
+                    <div class="testimonial-source">
+                        - Sammy West
+                    </div>
+                </div>
+                <div class="testimonial-before">
+                    <h3>Before</h3>
+                    <img src="./images/before1.jpg">
+                </div>
+                <div class="testimonial-after">
+                    <h3>After</h3>
+                    <img src="./images/after1.jpg">
+                </div>
+                <div class="testimonial-before">
+                    <h3>Before</h3>
+                    <img src="./images/before2.jpg">
+                </div>
+                <div class="testimonial-after">
+                    <h3>After</h3>
+                    <img src="./images/after2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
