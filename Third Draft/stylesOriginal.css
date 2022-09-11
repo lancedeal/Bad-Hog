@@ -1,0 +1,652 @@
+
+@font-face {
+    font-family: "Bahnschrift";
+    src: url(./Fonts/Bahnschrift/bahnschrift.ttf);
+}
+
+@font-face {
+    font-family: 'Gauge - Regular';
+    src: url(./Fonts/Gauge/Gauge-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Gauge - Heavy';
+    src: url(./Fonts/Gauge/Gauge-Heavy.otf);
+}
+
+@font-face {
+    font-family: 'Gauge - Oblique';
+    src: url(./Fonts/Gauge/Gauge-Oblique.otf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono - Regular';
+    src: url(./Fonts/Roboto\ Mono/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono - Medium';
+    src: url(./Fonts/Roboto\ Mono/RobotoMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Mono - Light';
+    src: url(./Fonts/Roboto\ Mono/RobotoMono-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito - Regular';
+    src: url(./Fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
+/*
+    TODO:
+        - transform nav
+        - parallax ?
+        - about polish
+        - big work on services
+        - big work on gallery
+*/
+
+*{
+    --primary:#AF936E;
+    --secondary:#C6B08E;
+    --black:#010101;
+    --white:#f3f3f3;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    min-height: 100%;
+}
+
+main{
+    background-color: var(--white);
+    width:95%;
+    min-height:95%;
+    padding:0 6em;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    font-family: 'Roboto Mono - Medium';
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.sub-header{
+    text-align: center;
+    font-size: 1em;
+    font-weight:lighter;
+    margin:.6em 0;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.estimator-choice{
+    border:#909090 solid 3px;
+    background-color: var(--white);
+    color:var(--black);
+    min-width: 3em;
+}
+
+.estimator-choice-selected{
+    border:#62BE77 solid 3px;
+}
+
+.estimator-choice-disabled{
+    border:#BE211E solid 3px;
+}
+
+.estimator-choice-disabled:hover{
+    cursor:auto;
+}
+
+.estimator-question{
+    max-width: 85%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.btn-hover{
+    border: var(--black) solid 3px;
+    transition: .35s ease-in;
+}
+
+.btn-hover:hover{
+    border:var(--black) solid 3px;
+    background-color: var(--white);
+    color:var(--black);
+}
+
+.btn-disabled{
+    background-color: #909090;
+    border:var(--black) solid 3px;
+    transition:.35s;
+}
+
+.btn-disabled:hover{
+    cursor:auto;
+}
+
+/*
+    About
+*/
+.about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#303030
+}
+
+.about-header{
+    text-align: left;
+    margin-left: 1.5em;
+    
+}
+
+.about-container{
+    display:flex;
+    justify-content: center;
+}
+
+.about-content{
+    width:55%;
+    margin-right: 1em;
+    box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.75);
+    padding:1em;
+    background-color: white;
+}
+
+/*
+    Services
+*/
+
+.services-container{
+    background-image: url(images/wp11386598-cow-farm-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:calc(100% + 12em);
+    min-height: 40em;
+    box-sizing: border-box;
+    padding:0;
+    margin:0 -6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-banner{
+    width:60%;
+    background-color: crimson;
+    display:flex;
+    justify-content: space-around;
+}
+
+.services-meta{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    margin-top: 4em;
+}
+
+/*
+    Invoice
+*/
+
+.invoice-container{
+    width:55vw;
+    font-family: 'Roboto Mono - Light';
+    font-size: 1.2em;
+    border-bottom: var(--black) solid 2px;
+}
+
+.invoice-header-row{
+    border-bottom: var(--black) solid 4px;
+    background-color: var(--secondary);
+}
+
+.invoice-row{
+    width:100%;
+    padding-left: 1em;
+    box-sizing: border-box;
+    display: flex;
+    line-height: 150%;
+}
+
+.invoice-description{
+    width:60%;
+    /*background-color: #79ff61;*/
+}
+
+.invoice-rate{
+    width:20%;
+    display:flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right:1em;
+    border-left: var(--black) solid 2px;
+    /*background-color:#7affcc;*/
+}
+
+.invoice-amount{
+    width:20%;
+    display:flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right:1em;
+    border-left: var(--black) solid 2px;
+    /*background-color: #ffb3d5;*/
+}
+
+.invoice-primary{
+    background-color: white;
+}
+
+.invoice-secondary{
+    background-color: #cacaca;
+}
+
+.empty-row{
+    height:1.2em;
+}
+
+/*
+    Invoice Meta
+*/
+.invoice-meta{
+    font-family: 'Roboto Mono - Light';
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 55vw;
+    margin-top: 1.5em;
+}
+
+.invoice-totals{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:15vw;
+}
+
+.comments{
+    width:30vw;
+}
+
+.comments-header{
+    background-color: var(--secondary);
+    padding-left: 1em;
+}
+
+.comments-container{
+    margin-top: .3em;
+    border: var(--black) solid 2px;
+    border-top: var(--black) solid 5px;
+    padding:.25em .75em;
+}
+
+/*
+    Legacy Styles Below
+*/
+
+
+/*
+    Nav
+*/
+
+.main-nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    padding-bottom: 0.5em;
+    background-color: goldenrod;
+    position:fixed;
+    top:0;
+    z-index: 2;
+}
+
+.main-nav ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: var(--white) solid 2px;
+    background-color: crimson;
+    width:30vw;
+}
+
+.main-nav a{
+    color:var(--black);
+    text-decoration: none;
+    font-family: 'Gauge - Heavy';
+    font-size:1.5em;
+    border:var(--black) solid 2px;
+}
+
+.main-nav a:hover{
+    border:white solid 2px;
+    border-top-left-radius: .8em;
+    border-bottom-right-radius: .8em;
+    transition: 0.4s;
+}
+
+.header-logo{
+    margin-top: 7em;
+    width:95%;
+    height:70%;
+    background-color: var(--primary);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+
+.header-logo img{
+    width:60%;
+    border-left: var(--black) solid 5px;
+    border-right: var(--black) solid 5px;
+    padding-left: 13em;
+    padding-right: 13em;
+}
+
+/*
+    Container
+*/
+
+.container{
+    font-family: 'Gauge - Heavy';
+    font-size: 1.5em;
+    background-color: var(--secondary);
+    width:95%;
+    box-sizing: border-box;
+    border-radius: 2em;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container-top-half{
+    display:flex;
+    justify-content: center;
+    background-color: var(--primary);
+    height:50%;
+    width:100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    flex-grow: 1;
+}
+
+.container-bottom-half{
+    background-color: var(--secondary);
+    height: 50%;
+    width:100%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    flex-grow: 1;
+}
+
+.container-one{
+    margin-bottom: 2em;
+}
+
+.container-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    margin-bottom: 2em;
+    position:relative;
+}
+
+.container-item:last-child{
+    margin-bottom: 0;
+}
+
+
+.container-about{
+    width:50%;
+}
+
+/*
+    Services
+*/
+
+/*
+.container-services{
+    background-color: var(--secondary);
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item{
+    padding:.2em;
+}
+
+.service-item:last-child{
+    padding-bottom: 1em;
+}
+
+.service-information{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+*/
+
+/*
+    Estimator
+*/
+
+.estimator{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30vw;
+    height:25vh;
+    position:relative;
+    z-index: 1;
+    background-color: white;
+    border-radius: .4em;
+}
+
+.estimator-item{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    box-sizing: border-box;
+}
+
+.estimator-final{
+    padding:1em 1.5em;
+    box-sizing: border-box;
+}
+
+
+/*
+    Contact 
+*/
+
+#contact{
+    background-color: white;
+    width:70%;
+    box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.contact-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-information{
+    padding: .5em 0;
+}
+
+/*
+    General
+*/
+
+.btn-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.btn-bottom button{
+    margin-left: .25em;
+    margin-right: .25em;
+    min-width: 3.25em;
+}
+
+.border-bottom{
+    border-bottom: var(--black) solid 2px;
+}
+
+.unit-input{
+    text-align: center;
+    width:3em;
+    border:var(--black) solid 2px;
+    border-radius: .2em;
+    background-color: var(--white);
+    font-size: 1.18em;
+}
+
+.outer-border{
+    background-color: var(--black);
+    width:100%;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-divider{
+    width: 100%;
+    position:relative;
+    bottom:.5em;
+}
+
+.margin-top-light{
+    margin-top: 2em;
+}
+
+.margin-top-very-light{
+    margin-top: 1em;
+}
+
+.margin-top-super-light{
+    margin-top: .5em;
+}
+
+.margin-bottom-light{
+    margin-bottom: 2em;
+}
+
+.margin-bottom-very-light{
+    margin-bottom: 1em;
+}
+
+.padding-top-light{
+    padding-top: 2em;
+}
+
+.padding-top-very-light{
+    padding-top: 1em;
+}
+
+.padding-bottom-light{
+    padding-bottom: 2em;
+}
+
+.padding-bottom-very-light{
+    padding-bottom: 1em;
+}
+
+.description-text{
+    font-size: .75em;
+    font-family: 'Nunito - Regular';
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.special-header{
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #eeeeee;
+    opacity: 75%;
+    border-radius: .4em;
+    padding:.5em
+    
+}
+
+.test-background{
+    background-color: crimson;
+}
+
+/*
+    Elements
+*/
+
+h2{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--black);
+    height:8em;
+}
+
+header{
+    background-color: var(--black);
+    height:30em;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button{
+    border:none;
+    background-color: var(--black);
+    color:var(--white);
+    font-size:1em;
+    border-radius: .15em;
+    padding:.1em .3em;
+    font-family: 'Nunito - Regular';
+}
+

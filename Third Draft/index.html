@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Hog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--
+            <a href="#" class="logo">Logo</a>
+        -->
+        <img style="width:10em"class="logo" src="images/BHLogo.png">
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="main-one"></div>
+        <div class="main-two"></div>
+    </main>
+    <section>
+
+        <!--
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        -->
+        
+        <h1 class="service-header">Services</h1>
+
+        <div class="service-banner">
+            <div class="banner-item">Fence Line Clearing</div>
+            <div class="banner-item">Lot Clearing</div>
+            <div class="banner-item">Tree Trimming</div>
+            <div class="banner-item">Tree Removal</div>
+        </div>
+
+        <div class="estimator margin-bottom-very-light margin-top-very-light">
+            <div class="estimator-clearing estimator-item">
+                <p class="estimator-question">What is the forest density?</p>
+                <div class="margin-top-super-light margin-bottom-very-light">
+                    <button id="lightC" class="estimator-choice">Light</button>
+                    <button id="moderateC" class="estimator-choice">Moderate</button>
+                    <button id="heavyC" class="estimator-choice">Heavy</button>
+                </div>
+                <div class="btn-bottom">
+                    <button id="clear-btn-next" class="btn-disabled">Next</button>
+                </div>
+            </div>
+            <div class="estimator-acres-boolean estimator-item hidden">
+                <p class="estimator-question">Is your property at least an acre or more?</p>
+                <div>
+                    <button id="acre-sub-false" class="estimator-choice">Yes</button>
+                    <button id="acre-sub-true" class="estimator-choice">No</button>
+                </div>
+                <div class="btn-bottom">
+                    <button id="acre-bool-btn-back" class="btn-hover">Back</button>
+                    <button id="acre-bool-btn-next" class="btn-disabled" disabled>Next</button>
+                </div>
+            </div>
+            <div class="estimator-acres estimator-item hidden">
+                <p class="estimator-question">How many acres would you like to clear?</p>
+                <input id="acre-input" class="unit-input" type="number" value="1" required>
+                <div class="btn-bottom margin-top-very-light">
+                    <button id="acre-btn-back" class="btn-hover">Back</button>
+                    <button id="acre-btn-next" class="btn-hover">Next</button>
+                </div>
+            </div>
+            <div class="estimator-disposal estimator-item hidden">
+                <p class="estimator-question">How would you like it disposed?</p>
+                <div>
+                    <button id="burnD" class="estimator-choice">Burning</button>
+                    <button id="mulchD" class="estimator-choice">Mulch</button>
+                    <button id="haulD" class="estimator-choice">Haul-Off</button>
+                </div>
+                <div class="description-text">*Haul-Off only available for 1 acre or less</div>
+                <div class="btn-bottom">
+                    <button id="dispo-btn-back" class="btn-hover">Back</button>
+                    <button id="dispo-btn-done" class="btn-hover">Done</button>
+                </div>
+            </div>
+            <div class="estimator-finished estimator-item hidden">
+                <div class="estimator-final">
+                    The Estimate Calculator is for illustrative purposes only, and these rates are subject to change. 
+                    For jobs above 3 acres, please <a href="#contact">contact us</a> directly for a quote.
+                </div>
+                <button id="total-reset" class="btn-hover margin-bottom-very-light">Reset</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+    <script>
+
+        const main = document.querySelector('main')
+        const main1 = document.querySelector('.main-one')
+        const main2 = document.querySelector('.main-two')
+
+        const header = document.querySelector('header')
+
+        window.addEventListener('scroll', e => {
+            main.style.transform = `translate3d(0px ,${ window.pageYOffset * 0.7 }px, 0px)`
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+
+    </script>
+</body>
+</html>
